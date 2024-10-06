@@ -2,6 +2,11 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 
+import { createConnectTransport } from "@connectrpc/connect-web";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { TransportProvider } from "@connectrpc/connect-query";
+import { Client } from "~/providers/client";
+
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -28,7 +33,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <Client>{children}</Client>
       </body>
     </html>
   );
