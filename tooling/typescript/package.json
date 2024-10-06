@@ -1,0 +1,11 @@
+{
+  "name": "@monorepo/tsconfig",
+  "private": true,
+  "version": "0.0.1",
+  "files": [
+    "*.json"
+  ],
+  "devDependencies": {
+    "@tsconfig/next": "2.0.3"
+  }
+}

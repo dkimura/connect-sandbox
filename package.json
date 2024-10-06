@@ -1,0 +1,13 @@
+{
+  "name": "connect-sandbox",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "turbo dev",
+    "codegen": "turbo run codegen"
+  },
+  "packageManager": "pnpm@9.12.0",
+  "devDependencies": {
+    "turbo": "2.1.3"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "$schema": "https://turborepo.org/schema.json",
+  "tasks": {
+    "codegen": {},
+    "lint": {},
+    "test": {},
+    "build": {},
+    "dev": {}
+  }
+}
