@@ -22,3 +22,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# buf.gen
+src/__generated__/
