@@ -15,17 +15,17 @@ importers:
   apps/next-app:
     dependencies:
       '@bufbuild/protobuf':
-        specifier: 1.10.0
-        version: 1.10.0
+        specifier: 2.2.0
+        version: 2.2.0
       '@connectrpc/connect':
         specifier: 1.5.0
-        version: 1.5.0(@bufbuild/protobuf@1.10.0)
+        version: 1.5.0(@bufbuild/protobuf@2.2.0)
       '@connectrpc/connect-query':
         specifier: 1.4.2
-        version: 1.4.2(@bufbuild/protobuf@1.10.0)(@connectrpc/connect@1.5.0(@bufbuild/protobuf@1.10.0))(@tanstack/react-query@5.59.0(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 1.4.2(@bufbuild/protobuf@2.2.0)(@connectrpc/connect@1.5.0(@bufbuild/protobuf@2.2.0))(@tanstack/react-query@5.59.0(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@connectrpc/connect-web':
         specifier: 1.5.0
-        version: 1.5.0(@bufbuild/protobuf@1.10.0)(@connectrpc/connect@1.5.0(@bufbuild/protobuf@1.10.0))
+        version: 1.5.0(@bufbuild/protobuf@2.2.0)(@connectrpc/connect@1.5.0(@bufbuild/protobuf@2.2.0))
       '@tanstack/react-query':
         specifier: 5.59.0
         version: 5.59.0(react@18.3.1)
@@ -44,13 +44,13 @@ importers:
         version: 1.44.0
       '@bufbuild/protoc-gen-es':
         specifier: 1.10.0
-        version: 1.10.0(@bufbuild/protobuf@1.10.0)
+        version: 1.10.0(@bufbuild/protobuf@2.2.0)
       '@connectrpc/protoc-gen-connect-es':
         specifier: 1.5.0
-        version: 1.5.0(@bufbuild/protoc-gen-es@1.10.0(@bufbuild/protobuf@1.10.0))(@connectrpc/connect@1.5.0(@bufbuild/protobuf@1.10.0))
+        version: 1.5.0(@bufbuild/protoc-gen-es@1.10.0(@bufbuild/protobuf@2.2.0))(@connectrpc/connect@1.5.0(@bufbuild/protobuf@2.2.0))
       '@connectrpc/protoc-gen-connect-query':
         specifier: 1.4.2
-        version: 1.4.2(@bufbuild/protoc-gen-es@1.10.0(@bufbuild/protobuf@1.10.0))
+        version: 1.4.2(@bufbuild/protoc-gen-es@1.10.0(@bufbuild/protobuf@2.2.0))
       '@monorepo/tsconfig':
         specifier: workspace:*
         version: link:../../tooling/typescript
@@ -134,6 +134,9 @@ packages:
 
   '@bufbuild/protobuf@1.10.0':
     resolution: {integrity: sha512-QDdVFLoN93Zjg36NoQPZfsVH9tZew7wKDKyV5qRdj8ntT4wQCOradQjRaTdwMhWUYsgKsvCINKKm87FdEk96Ag==}
+
+  '@bufbuild/protobuf@2.2.0':
+    resolution: {integrity: sha512-+imAQkHf7U/Rwvu0wk1XWgsP3WnpCWmK7B48f0XqSNzgk64+grljTKC7pnO/xBiEMUziF7vKRfbBnOQhg126qQ==}
 
   '@bufbuild/protoc-gen-es@1.10.0':
     resolution: {integrity: sha512-zBYBsVT/ul4uZb6F+kD7/k4sWNHVVbEPfJwKi0FDr+9VJo8MKIofI6pkr5ksBLr4fi/74r+e/75Xi/0clL5dXg==}
@@ -1765,11 +1768,13 @@ snapshots:
 
   '@bufbuild/protobuf@1.10.0': {}
 
-  '@bufbuild/protoc-gen-es@1.10.0(@bufbuild/protobuf@1.10.0)':
+  '@bufbuild/protobuf@2.2.0': {}
+
+  '@bufbuild/protoc-gen-es@1.10.0(@bufbuild/protobuf@2.2.0)':
     dependencies:
       '@bufbuild/protoplugin': 1.10.0
     optionalDependencies:
-      '@bufbuild/protobuf': 1.10.0
+      '@bufbuild/protobuf': 2.2.0
     transitivePeerDependencies:
       - supports-color
 
@@ -1781,40 +1786,40 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@connectrpc/connect-query@1.4.2(@bufbuild/protobuf@1.10.0)(@connectrpc/connect@1.5.0(@bufbuild/protobuf@1.10.0))(@tanstack/react-query@5.59.0(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@connectrpc/connect-query@1.4.2(@bufbuild/protobuf@2.2.0)(@connectrpc/connect@1.5.0(@bufbuild/protobuf@2.2.0))(@tanstack/react-query@5.59.0(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@bufbuild/protobuf': 1.10.0
-      '@connectrpc/connect': 1.5.0(@bufbuild/protobuf@1.10.0)
+      '@bufbuild/protobuf': 2.2.0
+      '@connectrpc/connect': 1.5.0(@bufbuild/protobuf@2.2.0)
       '@tanstack/react-query': 5.59.0(react@18.3.1)
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
       stable-hash: 0.0.4
 
-  '@connectrpc/connect-web@1.5.0(@bufbuild/protobuf@1.10.0)(@connectrpc/connect@1.5.0(@bufbuild/protobuf@1.10.0))':
+  '@connectrpc/connect-web@1.5.0(@bufbuild/protobuf@2.2.0)(@connectrpc/connect@1.5.0(@bufbuild/protobuf@2.2.0))':
     dependencies:
-      '@bufbuild/protobuf': 1.10.0
-      '@connectrpc/connect': 1.5.0(@bufbuild/protobuf@1.10.0)
+      '@bufbuild/protobuf': 2.2.0
+      '@connectrpc/connect': 1.5.0(@bufbuild/protobuf@2.2.0)
 
-  '@connectrpc/connect@1.5.0(@bufbuild/protobuf@1.10.0)':
+  '@connectrpc/connect@1.5.0(@bufbuild/protobuf@2.2.0)':
     dependencies:
-      '@bufbuild/protobuf': 1.10.0
+      '@bufbuild/protobuf': 2.2.0
 
-  '@connectrpc/protoc-gen-connect-es@1.5.0(@bufbuild/protoc-gen-es@1.10.0(@bufbuild/protobuf@1.10.0))(@connectrpc/connect@1.5.0(@bufbuild/protobuf@1.10.0))':
+  '@connectrpc/protoc-gen-connect-es@1.5.0(@bufbuild/protoc-gen-es@1.10.0(@bufbuild/protobuf@2.2.0))(@connectrpc/connect@1.5.0(@bufbuild/protobuf@2.2.0))':
     dependencies:
       '@bufbuild/protobuf': 1.10.0
       '@bufbuild/protoplugin': 1.10.0
     optionalDependencies:
-      '@bufbuild/protoc-gen-es': 1.10.0(@bufbuild/protobuf@1.10.0)
-      '@connectrpc/connect': 1.5.0(@bufbuild/protobuf@1.10.0)
+      '@bufbuild/protoc-gen-es': 1.10.0(@bufbuild/protobuf@2.2.0)
+      '@connectrpc/connect': 1.5.0(@bufbuild/protobuf@2.2.0)
     transitivePeerDependencies:
       - supports-color
 
-  '@connectrpc/protoc-gen-connect-query@1.4.2(@bufbuild/protoc-gen-es@1.10.0(@bufbuild/protobuf@1.10.0))':
+  '@connectrpc/protoc-gen-connect-query@1.4.2(@bufbuild/protoc-gen-es@1.10.0(@bufbuild/protobuf@2.2.0))':
     dependencies:
       '@bufbuild/protobuf': 1.10.0
       '@bufbuild/protoplugin': 1.10.0
     optionalDependencies:
-      '@bufbuild/protoc-gen-es': 1.10.0(@bufbuild/protobuf@1.10.0)
+      '@bufbuild/protoc-gen-es': 1.10.0(@bufbuild/protobuf@2.2.0)
     transitivePeerDependencies:
       - supports-color
 
