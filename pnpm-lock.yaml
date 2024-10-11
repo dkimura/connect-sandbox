@@ -46,8 +46,8 @@ importers:
         specifier: 1.10.0
         version: 1.10.0(@bufbuild/protobuf@1.10.0)
       '@connectrpc/protoc-gen-connect-es':
-        specifier: 1.5.0
-        version: 1.5.0(@bufbuild/protoc-gen-es@1.10.0(@bufbuild/protobuf@1.10.0))(@connectrpc/connect@1.5.0(@bufbuild/protobuf@1.10.0))
+        specifier: 1.6.1
+        version: 1.6.1(@bufbuild/protoc-gen-es@1.10.0(@bufbuild/protobuf@1.10.0))(@connectrpc/connect@1.5.0(@bufbuild/protobuf@1.10.0))
       '@connectrpc/protoc-gen-connect-query':
         specifier: 1.4.2
         version: 1.4.2(@bufbuild/protoc-gen-es@1.10.0(@bufbuild/protobuf@1.10.0))
@@ -168,13 +168,13 @@ packages:
     peerDependencies:
       '@bufbuild/protobuf': ^1.10.0
 
-  '@connectrpc/protoc-gen-connect-es@1.5.0':
-    resolution: {integrity: sha512-W3FX/mFPEY3rOIiIbxxUnIpQOPeFrwyhNL5m/JGBJ1lh5PAF0FH4WImJsnN9UAJR1HMkwf6RMfKVLuxFqu3KTA==}
+  '@connectrpc/protoc-gen-connect-es@1.6.1':
+    resolution: {integrity: sha512-0fHcaADd+GKM0I/koIQpmKg7b+QL18bXlggTUYEAlMFzsd4zN/ApG3235hdUcRyhrAOAItTXxh8ZAV/nNd43Gg==}
     engines: {node: '>=16.0.0'}
     hasBin: true
     peerDependencies:
       '@bufbuild/protoc-gen-es': ^1.10.0
-      '@connectrpc/connect': 1.5.0
+      '@connectrpc/connect': 1.6.1
     peerDependenciesMeta:
       '@bufbuild/protoc-gen-es':
         optional: true
@@ -1799,7 +1799,7 @@ snapshots:
     dependencies:
       '@bufbuild/protobuf': 1.10.0
 
-  '@connectrpc/protoc-gen-connect-es@1.5.0(@bufbuild/protoc-gen-es@1.10.0(@bufbuild/protobuf@1.10.0))(@connectrpc/connect@1.5.0(@bufbuild/protobuf@1.10.0))':
+  '@connectrpc/protoc-gen-connect-es@1.6.1(@bufbuild/protoc-gen-es@1.10.0(@bufbuild/protobuf@1.10.0))(@connectrpc/connect@1.5.0(@bufbuild/protobuf@1.10.0))':
     dependencies:
       '@bufbuild/protobuf': 1.10.0
       '@bufbuild/protoplugin': 1.10.0
